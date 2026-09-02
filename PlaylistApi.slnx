@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/PlaylistApi.API/PlaylistApi.API.csproj" Id="61a804ba-cf29-4282-84ca-14e3b9e40956" />
+  <Project Path="src/PlaylistApi.Application/PlaylistApi.Application.csproj" Id="753f30a4-1bd2-4009-b151-325a2482c63a" />
+  <Project Path="src/PlaylistApi.Domain/PlaylistApi.Domain.csproj" Id="260301b0-2488-4a59-ad89-d6f94e4375a3" />
+  <Project Path="src/PlaylistApi.Infrastructure/PlaylistApi.Infrastructure.csproj" Id="8570ca17-2812-4c8b-abc0-e61b066edbe9" />
+</Solution>
