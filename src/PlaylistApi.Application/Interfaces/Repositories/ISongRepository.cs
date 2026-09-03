@@ -10,8 +10,8 @@ namespace PlaylistApi.Application.Interfaces.Repositories
 
         Task AddToPlaylistAsync(PlaylistSong playlistSong);
 
-        Task<bool> IsSongInPlaylist(int playlistId, int songId);
+        Task<bool> IsSongInPlaylistAsync(int playlistId, int songId);
 
-        Task DeleteFromPlaylist(int playlistId, int songId);
+        Task DeleteFromPlaylistAsync(int playlistId, int songId);
     }
 }

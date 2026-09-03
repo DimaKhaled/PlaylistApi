@@ -1,4 +1,6 @@
-﻿namespace PlaylistApi.Application.Interfaces.Services
+﻿using PlaylistApi.Application.DTOs.Playlists;
+
+namespace PlaylistApi.Application.Interfaces.Services
 {
     public interface IPlaylistService
     {
