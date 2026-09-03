@@ -2,6 +2,6 @@
 {
     public interface IJwtTokenService
     {
-        Task<string> GenerateTokenAsync(Guid userId, string email);
+        string GenerateToken(Guid userId, string email);
     }
 }
