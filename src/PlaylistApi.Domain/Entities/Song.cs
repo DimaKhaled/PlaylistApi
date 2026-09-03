@@ -18,6 +18,6 @@
 
         public string? ExternalUrl { get; set; }
 
-        public ICollection<PlaylistSong> PlaylistSongs { get; set; } = new List<PlaylistSong>();
+        public List<PlaylistSong> PlaylistSongs { get; set; } = new List<PlaylistSong>();
     }
 }
