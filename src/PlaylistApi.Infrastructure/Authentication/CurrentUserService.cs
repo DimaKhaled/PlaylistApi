@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using PlaylistApi.Application.Interfaces.Authentication;
 using System.Security.Claims;
 
 namespace PlaylistApi.Infrastructure.Authentication

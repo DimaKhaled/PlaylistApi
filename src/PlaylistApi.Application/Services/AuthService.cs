@@ -27,7 +27,7 @@ namespace PlaylistApi.Application.Services
                 throw new ValidationException(string.Join(", ", result.Errors));
             }
 
-            var token = await _jwtTokenService.GenerateTokenAsync(result.UserId!.Value, request.Email);
+            var token = _jwtTokenService.GenerateToken(result.UserId!.Value, request.Email);
             return new AuthResponse
             {
                 AccessToken = token
@@ -43,7 +43,7 @@ namespace PlaylistApi.Application.Services
                 throw new UnauthorizedAccessException("Invalid email or password.");
             }
 
-            var token = await _jwtTokenService.GenerateTokenAsync(userId.Value, request.Email);
+            var token = _jwtTokenService.GenerateToken(userId.Value, request.Email);
             return new AuthResponse
             {
                 AccessToken = token

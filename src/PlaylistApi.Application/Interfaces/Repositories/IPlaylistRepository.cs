@@ -4,7 +4,7 @@ namespace PlaylistApi.Application.Interfaces.Repositories
 {
     public interface IPlaylistRepository
     {
-        Task<Playlist> GetPlaylistByIdAsync(int playlistId, Guid userId);
+        Task<Playlist?> GetPlaylistByIdAsync(int playlistId, Guid userId);
 
         Task<List<Playlist>> GetUserPlaylistsAsync(Guid userId);
 
