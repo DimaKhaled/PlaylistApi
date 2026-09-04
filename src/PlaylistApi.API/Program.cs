@@ -1,4 +1,5 @@
 
+using PlaylistApi.API.Middleware;
 using PlaylistApi.Application;
 using PlaylistApi.Infrastructure;
 
@@ -30,6 +31,8 @@ namespace PlaylistApi.API
             {
                 app.MapOpenApi();
             }
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.UseHttpsRedirection();
 
