@@ -38,7 +38,7 @@ namespace PlaylistApi.Application.Services
 
 
 
-        public async Task<List<PlaylistResponse>> GetUserPlaylists()
+        public async Task<List<PlaylistResponse>> GetUserPlaylistsAsync()
         {
             var userId = _currentUserService.UserId;
             var playlists = await _playlistRepository.GetUserPlaylistsAsync(userId);

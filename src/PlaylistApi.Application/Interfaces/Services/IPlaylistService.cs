@@ -6,7 +6,7 @@ namespace PlaylistApi.Application.Interfaces.Services
     {
         Task<PlaylistResponse> CreateAsync(CreatePlaylistRequest request);
 
-        Task<List<PlaylistResponse>> GetUserPlaylists();
+        Task<List<PlaylistResponse>> GetUserPlaylistsAsync();
 
         Task<PlaylistResponse> GetByIdAsync(int playlistId);
 
