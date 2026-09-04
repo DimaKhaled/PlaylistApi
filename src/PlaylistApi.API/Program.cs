@@ -1,4 +1,4 @@
-
+using Microsoft.OpenApi;
 using PlaylistApi.API.Middleware;
 using PlaylistApi.Application;
 using PlaylistApi.Infrastructure;
