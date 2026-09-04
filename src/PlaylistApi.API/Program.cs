@@ -1,4 +1,7 @@
 
+using PlaylistApi.Application;
+using PlaylistApi.Infrastructure;
+
 namespace PlaylistApi.API
 {
     public class Program
@@ -10,6 +13,13 @@ namespace PlaylistApi.API
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            builder.Services.AddApplication();
+
+            builder.Services.AddInfrastructure(builder.Configuration);
+
+            builder.Services.AddAuthorization();
+
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
@@ -22,6 +32,8 @@ namespace PlaylistApi.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
