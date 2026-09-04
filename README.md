@@ -490,7 +490,7 @@ Authenticates an existing user.
 All playlist endpoints require:
 
 ```http
-Authorization: Bearer <JWT>
+Authorization: Bearer Token
 ```
 
 ### Create Playlist
