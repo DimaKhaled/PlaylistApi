@@ -37,7 +37,7 @@ namespace PlaylistApi.Infrastructure.ExternalServices.iTunes
         public async Task<SongSearchResponse?> GetByExternalIdAsync(long externalId)
         {
 
-            var response = await _httpClient.GetAsync($"lookup={externalId}&entity=song");
+            var response = await _httpClient.GetAsync($"lookup?id={externalId}&entity=song");
 
             response.EnsureSuccessStatusCode();
 
